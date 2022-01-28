@@ -22,34 +22,34 @@ export default [
       },
       {
         "shelveId": "e906fd89-ecc2-43a7-89a9-4731543d5e47",
-        "id": "8725",
+        "id": "8731",
         "type": "PRODUCT",
         "images": [
-          "https://courier-images-prod.imgix.net/produc_variant/00008725_c431fbf8-5f01-4a90-aaa1-a06cff9306e8.jpg"
+          "      https://courier-images-prod.imgix.net/produc_variant/00008583_ed3d126a-4dd4-45a8-aa08-43856bdb06d4.jpg"
         ],
-        "displayName": "Skol 300ml | Apenas o Líquido",
+        "displayName": "Stella Artois 269ml",
         "applicableDiscount": null,
         "category": null,
         "brand": null,
         "price": {
-          "min": 1.99,
-          "max": 1.99
+          "min": 3.49,
+          "max": 3.49
         }
       },
       {
         "shelveId": "e906fd89-ecc2-43a7-89a9-4731543d5e47",
-        "id": "8729",
+        "id": "8732",
         "type": "PRODUCT",
         "images": [
-          "https://courier-images-prod.imgix.net/produc_variant/00008729_e095d6d8-7491-458c-8225-1ee8e9b76d27.jpg"
+          "https://courier-images-prod.imgix.net/produc_variant/00010266_b1667e4c-5cb1-4d0c-a35f-b9264c30dc46.jpg"
         ],
-        "displayName": "Brahma Chopp 300ml | Apenas o Líquido",
+        "displayName": "Brahma Duplo Malte 350ml",
         "applicableDiscount": null,
         "category": null,
         "brand": null,
         "price": {
-          "min": 1.99,
-          "max": 1.99
+          "min": 3.19,
+          "max": 3.19
         }
       },
       {
@@ -57,15 +57,15 @@ export default [
         "id": "8730",
         "type": "PRODUCT",
         "images": [
-          "https://courier-images-prod.imgix.net/produc_variant/00008730_80d814e8-a290-4742-b4d6-91bb95d4bdcb.jpg"
+          "https://courier-images-prod.imgix.net/produc_variant/00009746_a473285e-0edf-4073-842f-2930cb35a570.jpg"
         ],
-        "displayName": "Brahma Chopp 300ml | Vasilhame Incluso",
+        "displayName": "Original 350ml",
         "applicableDiscount": null,
         "category": null,
         "brand": null,
         "price": {
-          "min": 2.49,
-          "max": 2.49
+          "min": 3.59,
+          "max": 3.59
         }
       },
       {
