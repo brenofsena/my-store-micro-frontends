@@ -13,13 +13,11 @@ export const Item = styled.div`
 `;
 
 export const Image = styled.img`
-  text-align: center;
-  flex: 1;
   display: block;
   max-width: 200px;
   width: 100%;
   height: auto;
-  flex-grow: 1;
+  margin: 0 auto;
 `;
 
 export const Info = styled.div`

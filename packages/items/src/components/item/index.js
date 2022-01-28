@@ -17,10 +17,9 @@ const Item = ({ id, title, imageUrl, price }) => {
     <AsyncLoader>
       <S.Item key={id}>
         <S.Image
-            data-testid="image"
-            src={imageUrl}
-            alt={title}
-            title={title}
+          src={imageUrl}
+          alt={title}
+          title={title}
         />
         <S.Info>
           <S.Title>{title}</S.Title>
