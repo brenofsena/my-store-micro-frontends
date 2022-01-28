@@ -26,3 +26,4 @@ $ yarn start
 - React Router DOM
 - Styled Components
 - Polished
+- Redux Toolkit
