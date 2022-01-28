@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useMemo } from "react";
 import CloseIcon from "../../assets/close.svg";
 import BagIcon from "../../assets/bag.svg";
 import TrashIcon from "../../assets/trash.svg";
@@ -12,6 +12,20 @@ const Cart = () => {
   const [isOpen, setIsOpen] = useState(false);
   const { items } = useSelector(({ cart }) => cart);
 
+  const memoizedNumberedItems = useMemo(() => {
+    return items?.reduce((prev, current) => prev + current.quantity, 0)
+  }, [items])
+
+  const memoizedTotal = useMemo(() => {
+    return formatCurrency(
+      items?.reduce(
+        (prev, current) =>
+          prev + current.price * current.quantity,
+        0
+      )
+    )
+  })
+
   const handleOpenCart = () => setIsOpen(true);
 
   const handleCloseCart = () => setIsOpen(false);
@@ -22,7 +36,7 @@ const Cart = () => {
     <>
       <S.Bag onClick={handleOpenCart}>
         <img src={BagIcon} width={24} height={24} />
-        <S.NumberOfItems>{items?.length}</S.NumberOfItems>
+        <S.NumberOfItems>{memoizedNumberedItems}</S.NumberOfItems>
       </S.Bag>
 
       {isOpen && (
@@ -68,13 +82,7 @@ const Cart = () => {
                 <S.CartTotals>
                   Total:{" "}
                   <strong>
-                    {formatCurrency(
-                      items?.reduce(
-                        (prev, current) =>
-                          prev + current.price * current.quantity,
-                        0
-                      )
-                    )}
+                    {memoizedTotal}
                   </strong>
                 </S.CartTotals>
               </S.CartFooter>

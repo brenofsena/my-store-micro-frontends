@@ -28,7 +28,7 @@ const Item = ({ id, title, imageUrl, price }) => {
           </S.Price>
           <S.Actions>
             <BuyButton
-              onClick={() => addItem({ id, title, imageUrl, price, quantity: 1 })}
+              onClick={() => addItem({ id, title, imageUrl, price })}
             >
               Adicionar
             </BuyButton>
