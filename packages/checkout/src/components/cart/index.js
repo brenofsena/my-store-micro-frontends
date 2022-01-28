@@ -24,7 +24,7 @@ const Cart = () => {
         0
       )
     )
-  })
+  }, [items])
 
   const handleOpenCart = () => setIsOpen(true);
 
