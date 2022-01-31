@@ -8,12 +8,12 @@ const Cart = React.lazy(() => import('checkout/Cart'));
 const Navbar = () => {
   const [isFixed, setIsFixed] = useState(false);
 
-  const handleFixedHeader = () => 
+  const handleFixedNavbar = () => 
     (!isFixed && window.pageYOffset > 20) ? setIsFixed(true) : setIsFixed(false);
 
   useEffect(() => {
-    window.addEventListener('scroll', handleFixedHeader);
-    return () => window.removeEventListener('scroll', handleFixedHeader);
+    window.addEventListener('scroll', handleFixedNavbar);
+    return () => window.removeEventListener('scroll', handleFixedNavbar);
   }, []);
 
 
