@@ -12,7 +12,7 @@ const Cart = () => {
   const [isOpen, setIsOpen] = useState(false);
   const { items } = useSelector(({ cart }) => cart);
 
-  const memoizedNumberedItems = useMemo(() => {
+  const memoizedNumberOfItems = useMemo(() => {
     return items?.reduce((prev, current) => prev + current.quantity, 0)
   }, [items])
 
@@ -36,7 +36,7 @@ const Cart = () => {
     <>
       <S.Bag onClick={handleOpenCart}>
         <img src={BagIcon} width={24} height={24} />
-        <S.NumberOfItems>{memoizedNumberedItems}</S.NumberOfItems>
+        <S.NumberOfItems>{memoizedNumberOfItems}</S.NumberOfItems>
       </S.Bag>
 
       {isOpen && (
