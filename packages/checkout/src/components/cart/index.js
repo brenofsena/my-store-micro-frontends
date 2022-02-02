@@ -17,13 +17,13 @@ const Cart = () => {
   }, [items])
 
   const memoizedTotal = useMemo(() => {
-    return formatCurrency(
-      items?.reduce(
-        (prev, current) =>
-          prev + current.price * current.quantity,
-        0
-      )
+    const total = items?.reduce(
+      (prev, current) =>
+        prev + current.price * current.quantity,
+      0
     )
+    
+    return formatCurrency(total)
   }, [items])
 
   const handleOpenCart = () => setIsOpen(true);
