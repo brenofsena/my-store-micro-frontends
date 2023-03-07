@@ -1,4 +1,4 @@
-> ## Your Store Micro Frontends
+> ## My Store Micro Frontends
 
 Micro frontends playground with module federation ⚡
 
