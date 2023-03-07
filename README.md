@@ -2,8 +2,6 @@
 
 Micro frontends playground with module federation ⚡
 
-<img src="./docs/architecture.png">
-
 > ### Getting Started
 
 ```sh
